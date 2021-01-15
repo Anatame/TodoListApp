@@ -245,7 +245,8 @@ app.get("/:customListName", function (req, res) {
 //   port = 3000;
 // }
 // app.listen(port);
+const PORT = process.env.PORT || 3000;
 
-app.listen(process.env.PORT, function () {
+app.listen(PORT, function () {
     console.log("Server has started successfully!");
 });
